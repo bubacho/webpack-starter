@@ -59,7 +59,7 @@ const config = {
          {
             test: /\.vue$/,
             loader: 'vue-loader'
-          },
+         },
          {
             test: /\.(sass|scss)$/,
             include: path.resolve(__dirname, "src/scss"),
@@ -74,6 +74,9 @@ const config = {
                      sourceMap: true,
                      url: false,
                   },
+               },
+               {
+                  loader: 'postcss-loader',
                },
                {
                   loader: "sass-loader",
